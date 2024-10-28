@@ -14,12 +14,13 @@ def calculate_bmi(height, weight):
     # Check BMI category
     if bmi < 18.5:
         print("Underweight")
+        return -1
     elif 18.5 <= bmi < 24.9:
         print("Normal weight")
+        return 0
     elif 25 <= bmi < 29.9:
         print("Overweight")
-    else:
-        print("Obesity")
+        return 1
 
 # Call the function with sample data
 calculate_bmi(weight=57, height=173)
